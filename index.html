@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Student score Predictor</title>
+</head>
+<body>
+  <!-- Form Get input to predict Marks-->
+  <center>
+    <form action="{{ url_for('predict')}}" method="post">
+        <h1>ENTER YOUR STUDY HOURS TO PREDICT MARKS</h1>
+        <div class="inabcput">
+          <!-- <input type="text" name="name" placeholder="Enter Name"  required="required"> -->
+          <input type="number" name="study_hours" placeholder="Study Hours"  required="required"></div>
+        <div class="btns">
+            <button class="button-56" type="submit"><strong>Predict Marks</strong></button></a>
+        </div>
+        
+    </form>
+    </center>
+
+    <body>
+       
+    </body>
+   <!-- Show predicted output using ML model --> 
+   <div>
+       <center>
+   <h2>{{ prediction_text }}</h2>
+       </center>
+   </div>
+
+</body>
+</html>
